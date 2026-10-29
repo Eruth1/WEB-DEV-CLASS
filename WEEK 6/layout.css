@@ -1,0 +1,133 @@
+/*
+filename: layout.css
+author: Eruth (Thành)
+description: Layout stylesheet for lab05.html matching lab requirements and final layout preview
+*/
+
+article {
+    min-width: 30em;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* --- Header --- */
+header {
+    border: 1px solid darkgray;
+    margin: 0.5em 0;
+    padding: 0.8em;
+    background-color: #d3d3d3; /* Màu xám nhạt */
+    text-align: center;
+}
+
+header h1 {
+    color: purple;
+    font-size: 1.8em;
+}
+/*navigatior*/
+nav {
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+nav .menu {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.3em 0.8em;
+    margin-right: 0.3em;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    border: 2px solid purple; 
+    border-radius: 12px;
+    margin: 0 0 1em 1em;
+    padding: 1em;
+    background-color: #f8f8ff; 
+    font-style: italic;
+}
+
+#lists, #tables, #hyperlinks, #images {
+    width: 48%;
+}
+
+#lists h2, #tables h2, #hyperlinks h2, #images h2 {
+    text-align: center;
+    color: teal; 
+}
+
+#lists {
+    clear: both; 
+    float: left;
+}
+
+#tables {
+    float: right;
+}
+
+table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    width: 100%; 
+    text-align: center; 
+}
+
+table, th, td {
+    border: 1px solid #666;
+    padding: 5px;
+}
+
+#hyperlinks {
+    clear: left;
+    float: left;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#images {
+    float: right;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#images figure {
+    border: 1px solid #ccc;
+    padding: 0.8em;
+    margin: 0;
+    display: inline-block;
+}
+
+#images img {
+    margin-top: 0.5em;
+    max-width: 100%; 
+}
+
+/* --- Footer --- */
+footer {
+    clear: both; 
+    border-top: 4px double darkgray; 
+    margin-top: 3em;
+    padding: 1em 0;
+    
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+
+footer p {
+    margin: 0; 
+    font-size: 0.9em;
+    color: #333;
+}
